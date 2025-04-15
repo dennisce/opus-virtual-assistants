@@ -8,7 +8,7 @@ const ParallaxHero = () => {
     <Parallax
       blur={0}
       bgImage="/hero-bg.jpg"
-      bgImageAlt="Tecnologia e varejo"
+      bgImageAlt="Tecnologia e Varejo"
       strength={200}
       className="relative"
     >
