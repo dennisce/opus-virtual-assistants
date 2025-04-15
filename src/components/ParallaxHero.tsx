@@ -1,6 +1,7 @@
 
 import { Parallax } from "react-parallax";
 import { Button } from "./ui/button";
+import { MessageCircle } from "lucide-react";
 
 const ParallaxHero = () => {
   return (
@@ -21,9 +22,30 @@ const ParallaxHero = () => {
             <p className="text-lg md:text-xl mb-8 text-white/90">
               Automatize seu suporte ao cliente com assistentes virtuais que entendem, aprendem e resolvem problemas 24/7.
             </p>
-            <Button size="lg" variant="secondary" className="text-purple-600 hover:text-purple-700">
-              Começar Agora
-            </Button>
+            
+            <div className="space-y-6">
+              <Button size="lg" variant="secondary" className="text-purple-600 hover:text-purple-700">
+                Começar Agora
+              </Button>
+              
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg mt-8 border border-white/20 shadow-xl">
+                <h3 className="text-xl font-bold text-white mb-2">Experimente o Opus AI agora mesmo!</h3>
+                <p className="text-white/80 mb-4">
+                  Converse com nosso assistente virtual e descubra como a mesma tecnologia pode revolucionar o atendimento do seu negócio.
+                </p>
+                <Button 
+                  size="lg" 
+                  variant="default" 
+                  className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white w-full md:w-auto animate-pulse"
+                >
+                  <MessageCircle className="mr-2" />
+                  Testar o Assistente Opus
+                </Button>
+                <p className="text-xs text-white/70 mt-2">
+                  A mesma experiência que seus clientes terão com seu próprio assistente personalizado
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
