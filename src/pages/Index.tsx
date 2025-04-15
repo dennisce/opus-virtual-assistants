@@ -1,24 +1,13 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, MessageCircle, Bot, Database, BrainCircuit, Zap, Brain, Image, Lightbulb } from "lucide-react";
+import ParallaxHero from "@/components/ParallaxHero";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-purple-600 to-blue-600 text-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6">Transforme seu Atendimento com Assistentes Virtuais Inteligentes</h1>
-            <p className="text-xl mb-8">Automatize seu suporte ao cliente com assistentes virtuais que entendem, aprendem e resolvem problemas 24/7.</p>
-            <Button size="lg" variant="secondary" className="text-purple-600 hover:text-purple-700">
-              Começar Agora
-            </Button>
-          </div>
-        </div>
-      </section>
-
+      <ParallaxHero />
+      
       {/* Benefícios Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
