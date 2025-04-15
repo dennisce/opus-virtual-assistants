@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, MessageCircle, Bot, Database, BrainCircuit, Zap } from "lucide-react";
+import { Check, MessageCircle, Bot, Database, BrainCircuit, Zap, Brain, Image, Lightbulb } from "lucide-react";
 
 const Index = () => {
   return (
@@ -73,6 +73,14 @@ const Index = () => {
                     <Check className="w-5 h-5 text-green-500 mr-2" />
                     <span>Treinamento personalizado</span>
                   </li>
+                  <li className="flex items-center">
+                    <Lightbulb className="w-5 h-5 text-yellow-500 mr-2" />
+                    <span>Aprendizado contínuo baseado no seu negócio</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Brain className="w-5 h-5 text-purple-500 mr-2" />
+                    <span>Adaptação gradual à identidade da empresa</span>
+                  </li>
                 </ul>
                 <Button className="w-full mt-6">Contratar</Button>
               </CardContent>
@@ -93,12 +101,20 @@ const Index = () => {
                     <span>Tudo do plano Jr</span>
                   </li>
                   <li className="flex items-center">
-                    <Check className="w-5 h-5 text-green-500 mr-2" />
-                    <span>Mensagens de áudio</span>
+                    <MessageCircle className="w-5 h-5 text-blue-500 mr-2" />
+                    <span>Modelo de IA avançado com conversação por áudio</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-green-500 mr-2" />
                     <span>Até 2.000 atendimentos/mês</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Lightbulb className="w-5 h-5 text-yellow-500 mr-2" />
+                    <span>Inteligência de contexto aprimorada</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Brain className="w-5 h-5 text-purple-500 mr-2" />
+                    <span>Personalização avançada da identidade empresarial</span>
                   </li>
                 </ul>
                 <Button className="w-full mt-6 bg-purple-600 hover:bg-purple-700">Contratar</Button>
@@ -117,12 +133,28 @@ const Index = () => {
                     <span>Tudo do plano Pleno</span>
                   </li>
                   <li className="flex items-center">
-                    <Check className="w-5 h-5 text-green-500 mr-2" />
-                    <span>Processamento de imagens</span>
+                    <Image className="w-5 h-5 text-indigo-500 mr-2" />
+                    <span>Reconhecimento e análise de imagens</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Bot className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Sugestão de produtos baseada em imagens</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-green-500 mr-2" />
                     <span>Atendimentos ilimitados</span>
+                  </li>
+                  <li className="flex items-center">
+                    <BrainCircuit className="w-5 h-5 text-red-500 mr-2" />
+                    <span>O melhor modelo de IA do mercado</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Lightbulb className="w-5 h-5 text-yellow-500 mr-2" />
+                    <span>Aprendizado profundo e contínuo</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Brain className="w-5 h-5 text-purple-500 mr-2" />
+                    <span>Adaptação completa à identidade do seu negócio</span>
                   </li>
                 </ul>
                 <Button className="w-full mt-6">Contratar</Button>
