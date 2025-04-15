@@ -3,6 +3,12 @@ import { Parallax } from "react-parallax";
 import { Button } from "./ui/button";
 import { MessageCircle } from "lucide-react";
 
+const callAssistente = (msg) => {
+  const numero = '558592332844'; // sem o '+' e sem espaços
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
+  window.open(url, '_blank');
+}
+
 const ParallaxHero = () => {
   return (
     <Parallax
@@ -13,7 +19,7 @@ const ParallaxHero = () => {
       className="relative"
     >
       <div className="min-h-[80vh] flex items-center justify-center relative">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-600/90 to-blue-600/90" />
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-600/80 to-blue-600/80" />
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
@@ -24,7 +30,7 @@ const ParallaxHero = () => {
             </p>
             
             <div className="space-y-6">
-              <Button size="lg" variant="secondary" className="text-purple-600 hover:text-purple-700">
+              <Button size="lg" variant="secondary" className="text-purple-600 hover:text-purple-700" id="comecarAssistente" onClick={() => callAssistente("Olá, gostaria de começar a entender melhor sobre os assistentes")}>
                 Começar Agora
               </Button>
               
@@ -33,12 +39,14 @@ const ParallaxHero = () => {
                 <p className="text-white/80 mb-4">
                   Converse com nosso assistente virtual e descubra como a mesma tecnologia pode revolucionar o atendimento do seu negócio.
                 </p>
-                <Button 
+                <Button
+                  onClick={() => callAssistente("Oi, gostaria de testar esse assistente")} 
+                  id="testarAssistente"  
                   size="lg" 
                   variant="default" 
                   className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white w-full md:w-auto animate-pulse"
                 >
-                  <MessageCircle className="mr-2" />
+                  <MessageCircle className="mr-2"/>
                   Testar o Assistente Opus
                 </Button>
                 <p className="text-xs text-white/70 mt-2">

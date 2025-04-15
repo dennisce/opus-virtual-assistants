@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, MessageCircle, Bot, Database, BrainCircuit, Zap, Brain, Image, Lightbulb } from "lucide-react";
+import { Check, MessageCircle, Bot, Database, BrainCircuit, Zap, Brain, Image, Lightbulb, CalendarSyncIcon } from "lucide-react";
 import ParallaxHero from "@/components/ParallaxHero";
-
+const callAssistente = (msg) => {
+  const numero = '558592332844'; // sem o '+' e sem espaços
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
+  window.open(url, '_blank');
+}
 const Index = () => {
   return (
     <div className="min-h-screen">
@@ -63,6 +67,14 @@ const Index = () => {
                     <span>Treinamento personalizado</span>
                   </li>
                   <li className="flex items-center">
+                    <Check className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Sem taxa de implantação</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Aproveita seu whatsapp já existente</span>
+                  </li>
+                  <li className="flex items-center">
                     <Lightbulb className="w-5 h-5 text-yellow-500 mr-2" />
                     <span>Aprendizado contínuo baseado no seu negócio</span>
                   </li>
@@ -71,7 +83,7 @@ const Index = () => {
                     <span>Adaptação gradual à identidade da empresa</span>
                   </li>
                 </ul>
-                <Button className="w-full mt-6">Contratar</Button>
+                <Button className="w-full mt-6" id="contratarJr"  onClick={() => callAssistente("Oi, gostaria de contratar um assistente Jr")} >Contratar</Button>
               </CardContent>
             </Card>
 
@@ -81,7 +93,7 @@ const Index = () => {
               </div>
               <CardHeader>
                 <CardTitle className="text-2xl text-center">Assistente Pleno</CardTitle>
-                <div className="text-3xl font-bold text-center text-purple-600 my-4">R$ 500/mês</div>
+                <div className="text-3xl font-bold text-center text-purple-600 my-4">R$ 550/mês</div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-4">
@@ -102,18 +114,22 @@ const Index = () => {
                     <span>Inteligência de contexto aprimorada</span>
                   </li>
                   <li className="flex items-center">
+                    <CalendarSyncIcon className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Integração com Google Calendar</span>
+                  </li>
+                  <li className="flex items-center">
                     <Brain className="w-5 h-5 text-purple-500 mr-2" />
                     <span>Personalização avançada da identidade empresarial</span>
                   </li>
                 </ul>
-                <Button className="w-full mt-6 bg-purple-600 hover:bg-purple-700">Contratar</Button>
+                <Button id="contratarJr"  onClick={() => callAssistente("Oi, gostaria de contratar um assistente Pleno")} className="w-full mt-6 bg-purple-600 hover:bg-purple-700">Contratar</Button>
               </CardContent>
             </Card>
 
             <Card className="border-2 hover:border-purple-500 transition-all">
               <CardHeader>
                 <CardTitle className="text-2xl text-center">Assistente Sênior</CardTitle>
-                <div className="text-3xl font-bold text-center text-purple-600 my-4">R$ 1.200/mês</div>
+                <div className="text-3xl font-bold text-center text-purple-600 my-4">R$ 1.320/mês</div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-4">
@@ -146,7 +162,7 @@ const Index = () => {
                     <span>Adaptação completa à identidade do seu negócio</span>
                   </li>
                 </ul>
-                <Button className="w-full mt-6">Contratar</Button>
+                <Button id="contratarJr"  onClick={() => callAssistente("Oi, gostaria de contratar um assistente Sênior")} className="w-full mt-6">Contratar</Button>
               </CardContent>
             </Card>
           </div>
@@ -160,7 +176,7 @@ const Index = () => {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Nossos assistentes podem ser integrados aos seus sistemas existentes, garantindo um atendimento ainda mais eficiente e personalizado.
           </p>
-          <Button variant="outline" size="lg" className="border-purple-500 text-purple-600 hover:bg-purple-50">
+          <Button id="faleComEspecialista"  onClick={() => callAssistente("Oi, gostaria de falar com um especialista")} variant="outline" size="lg" className="border-purple-500 text-purple-600 hover:bg-purple-50">
             Fale com um Especialista
           </Button>
         </div>
@@ -173,7 +189,7 @@ const Index = () => {
           <p className="text-xl mb-8">
             Comece agora mesmo com nossos assistentes virtuais e veja seu negócio crescer.
           </p>
-          <Button size="lg" variant="secondary" className="text-purple-600 hover:text-purple-700">
+          <Button id="comeceGratuitamente"  onClick={() => callAssistente("Oi, gostaria de fazer um teste gratuito")} size="lg" variant="secondary" className="text-purple-600 hover:text-purple-700">
             Começar Gratuitamente
           </Button>
         </div>
