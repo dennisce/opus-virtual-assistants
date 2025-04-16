@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 import { MessageCircle } from "lucide-react";
 
 const callAssistente = (msg) => {
-  const numero = '558592332844'; // sem o '+' e sem espaços
+  const numero = '5585920021719'; // sem o '+' e sem espaços
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
 }
