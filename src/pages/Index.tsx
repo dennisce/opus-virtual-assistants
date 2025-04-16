@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, MessageCircle, Bot, Database, BrainCircuit, Zap, Brain, Image, Lightbulb, CalendarSyncIcon } from "lucide-react";
 import ParallaxHero from "@/components/ParallaxHero";
 const callAssistente = (msg) => {
-  const numero = '558592332844'; // sem o '+' e sem espaços
+  const numero = '5585920021719'; // sem o '+' e sem espaços
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
 }
