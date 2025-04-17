@@ -1,9 +1,23 @@
+
 import { Button } from "@/components/ui/button";
 import NavBar from "@/components/NavBar";
 import MessageStats from "@/components/dashboard/MessageStats";
 import TotalServices from "@/components/dashboard/TotalServices";
 import ConversationHistory from "@/components/dashboard/ConversationHistory";
 import ParallaxHero from "@/components/ParallaxHero";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { 
+  Zap, 
+  BrainCircuit, 
+  Database, 
+  Check, 
+  Lightbulb, 
+  Brain, 
+  MessageCircle,
+  Bot,
+  Image as ImageIcon
+} from "lucide-react";
+import CalendarSyncIcon from "@/components/icons/CalendarSyncIcon";
 
 const callAssistente = (msg) => {
   const numero = '5585920021719';
@@ -158,7 +172,7 @@ const Index = () => {
                     <span>Tudo do plano Pleno</span>
                   </li>
                   <li className="flex items-center">
-                    <Image className="w-5 h-5 text-indigo-500 mr-2" />
+                    <ImageIcon className="w-5 h-5 text-indigo-500 mr-2" />
                     <span>Reconhecimento e análise de imagens</span>
                   </li>
                   <li className="flex items-center">
