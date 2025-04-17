@@ -7,13 +7,13 @@ const NavBar = () => {
   return (
     <div className="w-full bg-white border-b">
       <div className="container mx-auto px-4">
-        <NavigationMenu className="flex justify-between py-4">
+        <NavigationMenu className="flex justify-between items-center py-4">
           <NavigationMenuList>
             <NavigationMenuItem>
               <img src="/Opus.svg" alt="Opus Logo" className="h-8" />
             </NavigationMenuItem>
           </NavigationMenuList>
-          <NavigationMenuList>
+          <NavigationMenuList className="ml-auto">
             <NavigationMenuItem>
               <Button variant="outline" className="gap-2">
                 <UserCircle className="h-5 w-5" />
