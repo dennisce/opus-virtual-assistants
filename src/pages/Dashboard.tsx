@@ -2,13 +2,13 @@
 import MessageStats from "@/components/dashboard/MessageStats";
 import TotalServices from "@/components/dashboard/TotalServices";
 import ChatHistory from "@/components/dashboard/ChatHistory";
+import ConversionTable from "@/components/dashboard/ConversionTable";
 import NavBar from "@/components/NavBar";
 
 const Dashboard = () => {
   return (
     <div className="min-h-screen">
       <NavBar />
-      {/* Dashboard Section */}
       <section className="py-8 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold mb-6">Dashboard</h2>
@@ -16,9 +16,14 @@ const Dashboard = () => {
             <MessageStats />
             <TotalServices />
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-sm">
-            <h3 className="text-xl font-semibold mb-4">Chat</h3>
-            <ChatHistory />
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold mb-4">Chat</h3>
+              <ChatHistory />
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <ConversionTable />
+            </div>
           </div>
         </div>
       </section>
