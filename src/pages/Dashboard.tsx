@@ -1,7 +1,7 @@
 
 import MessageStats from "@/components/dashboard/MessageStats";
 import TotalServices from "@/components/dashboard/TotalServices";
-import ConversationHistory from "@/components/dashboard/ConversationHistory";
+import ChatHistory from "@/components/dashboard/ChatHistory";
 import NavBar from "@/components/NavBar";
 
 const Dashboard = () => {
@@ -17,8 +17,8 @@ const Dashboard = () => {
             <TotalServices />
           </div>
           <div className="bg-white p-6 rounded-lg shadow-sm">
-            <h3 className="text-xl font-semibold mb-4">Histórico de Conversas</h3>
-            <ConversationHistory />
+            <h3 className="text-xl font-semibold mb-4">Chat</h3>
+            <ChatHistory />
           </div>
         </div>
       </section>
