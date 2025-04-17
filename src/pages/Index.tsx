@@ -1,15 +1,30 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, MessageCircle, Bot, Database, BrainCircuit, Zap, Brain, Image, Lightbulb, CalendarSyncIcon } from "lucide-react";
+import NavBar from "@/components/NavBar";
 import ParallaxHero from "@/components/ParallaxHero";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { 
+  Zap, 
+  BrainCircuit, 
+  Database, 
+  Check, 
+  Lightbulb, 
+  Brain, 
+  MessageCircle,
+  Bot,
+  Image as ImageIcon
+} from "lucide-react";
+import CalendarSyncIcon from "@/components/icons/CalendarSyncIcon";
+
 const callAssistente = (msg) => {
-  const numero = '5585920021719'; // sem o '+' e sem espaços
+  const numero = '5585920021719';
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
-}
+};
+
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <NavBar />
       <ParallaxHero />
       
       {/* Benefícios Section */}
@@ -138,7 +153,7 @@ const Index = () => {
                     <span>Tudo do plano Pleno</span>
                   </li>
                   <li className="flex items-center">
-                    <Image className="w-5 h-5 text-indigo-500 mr-2" />
+                    <ImageIcon className="w-5 h-5 text-indigo-500 mr-2" />
                     <span>Reconhecimento e análise de imagens</span>
                   </li>
                   <li className="flex items-center">
