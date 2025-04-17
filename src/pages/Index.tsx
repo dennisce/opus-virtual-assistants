@@ -147,7 +147,7 @@ const Index = () => {
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-green-500 mr-2" />
-                    <span>Atendimentos ilimitados</span>
+                    <span>Até 4.000 atendimentos/mês</span>
                   </li>
                   <li className="flex items-center">
                     <BrainCircuit className="w-5 h-5 text-red-500 mr-2" />
