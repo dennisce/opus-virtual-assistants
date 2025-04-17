@@ -5,7 +5,8 @@ import { UserCircle } from "lucide-react";
 
 const NavBar = () => {
   return (
-    <div className="w-full bg-white border-b">
+    <div className="">
+    {/*<div className="w-full bg-white border-b">
       <div className="container mx-auto px-4">
         <NavigationMenu className="flex justify-between items-center py-4">
           <NavigationMenuList>
@@ -22,7 +23,7 @@ const NavBar = () => {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-      </div>
+      </div>*/}
     </div>
   );
 };
