@@ -7,8 +7,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
+import TagManager from 'react-gtm-module'
+
 
 const queryClient = new QueryClient();
+const tagManagerArgs = {
+  gtmId: 'GTM-NBP4MLZX'
+};
+TagManager.initialize(tagManagerArgs);
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
