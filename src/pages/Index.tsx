@@ -16,7 +16,7 @@ import {
 import CalendarSyncIcon from "@/components/icons/CalendarSyncIcon";
 
 const callAssistente = (msg) => {
-  const numero = '5585920021719';
+  const numero = '5585920018032';
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
 };
