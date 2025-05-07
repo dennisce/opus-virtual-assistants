@@ -14,6 +14,7 @@ import {
   Image as ImageIcon
 } from "lucide-react";
 import CalendarSyncIcon from "@/components/icons/CalendarSyncIcon";
+import { Link } from "react-router-dom";
 
 const callAssistente = (msg) => {
   const numero = '5585920018032';
@@ -209,6 +210,18 @@ const Index = () => {
           </Button>
         </div>
       </section>
+      
+      {/* Terms of Use Footer Citation */}
+      <footer className="py-6 bg-gray-100">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-gray-600">
+            © {new Date().getFullYear()} Opus - Assistentes Inteligentes. Todos os direitos reservados.
+          </p>
+          <p className="mt-2 text-sm text-gray-500">
+            Ao usar nossos serviços, você concorda com nossos <Link to="/termos-de-uso" className="text-purple-600 hover:text-purple-800 underline">Termos de Uso</Link>.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
