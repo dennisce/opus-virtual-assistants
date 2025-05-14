@@ -15,7 +15,11 @@ import {
   Image as ImageIcon,
   LayoutDashboard,
   BarChart,
-  TrendingUp
+  TrendingUp,
+  PieChart,
+  LineChart,
+  MessageSquare,
+  Calendar
 } from "lucide-react";
 import CalendarSyncIcon from "@/components/icons/CalendarSyncIcon";
 import { Link } from "react-router-dom";
@@ -62,7 +66,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Dashboard Analytics Section - NOVA SEÇÃO */}
+      {/* Dashboard Analytics Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Dashboard Analítico de Desempenho</h2>
@@ -137,6 +141,148 @@ const Index = () => {
           <div className="text-center">
             <Button id="verDashboard" onClick={() => callAssistente("Olá, gostaria de saber mais sobre o dashboard analítico")} className="bg-gradient-to-r from-purple-600 to-purple-400 hover:from-purple-700 hover:to-purple-500 text-white font-medium px-6 py-3 rounded-full">
               Conheça nosso Dashboard Analítico
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* NOVA SEÇÃO - Monitoramento de Conversões */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">Monitoramento Completo de Conversões</h2>
+          <p className="text-lg text-center mb-12 text-gray-600 max-w-3xl mx-auto">
+            Acompanhe em tempo real todas as conversões e indicadores-chave do seu negócio em um painel intuitivo.
+          </p>
+          
+          <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+            <div className="space-y-6 order-2 lg:order-1">
+              <div className="flex items-start gap-4">
+                <div className="bg-purple-100 p-2 rounded-lg">
+                  <PieChart className="w-6 h-6 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Taxa de Conversão em Tempo Real</h3>
+                  <p className="text-gray-600">
+                    Monitore quanto do seu tráfego está se convertendo em clientes e oportunidades de negócio.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="bg-purple-100 p-2 rounded-lg">
+                  <LineChart className="w-6 h-6 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Horários de Maior Engajamento</h3>
+                  <p className="text-gray-600">
+                    Identifique os períodos de maior demanda para otimizar suas estratégias de comunicação.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="bg-purple-100 p-2 rounded-lg">
+                  <Zap className="w-6 h-6 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Acompanhamento de Leads</h3>
+                  <p className="text-gray-600">
+                    Visualize o crescimento de potenciais clientes e compare com períodos anteriores.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="bg-green-50 p-4 rounded-lg border border-green-200 mt-6">
+                <p className="text-green-800 font-medium">
+                  Disponível em todos os planos de assistentes! Transforme dados em decisões estratégicas para o seu negócio.
+                </p>
+              </div>
+            </div>
+            
+            <div className="rounded-xl overflow-hidden shadow-lg order-1 lg:order-2 relative">
+              <div className="absolute inset-0 backdrop-blur-md bg-white/30 z-10"></div>
+              <img 
+                src="/lovable-uploads/298c7438-cc83-4530-bf48-965d11b10f86.png" 
+                alt="Dashboard de Conversões Opus" 
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <Button id="saibaMaisConversoes" onClick={() => callAssistente("Olá, gostaria de saber mais sobre o monitoramento de conversões")} className="bg-gradient-to-r from-purple-600 to-purple-400 hover:from-purple-700 hover:to-purple-500 text-white font-medium px-6 py-3 rounded-full">
+              Saiba Mais Sobre Métricas de Conversão
+            </Button>
+          </div>
+        </div>
+      </section>
+      
+      {/* NOVA SEÇÃO - Acompanhamento de Conversas */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">Acompanhamento Detalhado de Conversas</h2>
+          <p className="text-lg text-center mb-12 text-gray-600 max-w-3xl mx-auto">
+            Acompanhe todas as interações entre seu assistente virtual e seus clientes com total transparência.
+          </p>
+          
+          <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+            <div className="rounded-xl overflow-hidden shadow-lg relative">
+              <div className="absolute inset-0 backdrop-blur-md bg-white/30 z-10"></div>
+              <img 
+                src="/lovable-uploads/48a17f48-7ba9-48a6-968a-361ae10373b9.png" 
+                alt="Acompanhamento de Conversas Opus" 
+                className="w-full h-auto"
+              />
+            </div>
+            
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="bg-purple-100 p-2 rounded-lg">
+                  <MessageSquare className="w-6 h-6 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Histórico Completo</h3>
+                  <p className="text-gray-600">
+                    Acesse todo o histórico de conversas organizadas por data e cliente para análise detalhada.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="bg-purple-100 p-2 rounded-lg">
+                  <Calendar className="w-6 h-6 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Agendamentos Automáticos</h3>
+                  <p className="text-gray-600">
+                    Acompanhe todos os compromissos que seu assistente agenda diretamente com seus clientes.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="bg-purple-100 p-2 rounded-lg">
+                  <Bot className="w-6 h-6 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Supervisão de Qualidade</h3>
+                  <p className="text-gray-600">
+                    Avalie o desempenho do seu assistente e faça ajustes para melhorar o atendimento.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="bg-green-50 p-4 rounded-lg border border-green-200 mt-6">
+                <p className="text-green-800 font-medium">
+                  Recurso disponível em todos os planos! Mantenha-se informado sobre todas as interações com seus clientes.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <Button id="saibaMaisConversas" onClick={() => callAssistente("Olá, gostaria de saber mais sobre o acompanhamento de conversas")} className="bg-gradient-to-r from-purple-600 to-purple-400 hover:from-purple-700 hover:to-purple-500 text-white font-medium px-6 py-3 rounded-full">
+              Conheça o Sistema de Acompanhamento
             </Button>
           </div>
         </div>
