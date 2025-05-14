@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import NavBar from "@/components/NavBar";
 import ParallaxHero from "@/components/ParallaxHero";
@@ -11,7 +12,10 @@ import {
   Brain, 
   MessageCircle,
   Bot,
-  Image as ImageIcon
+  Image as ImageIcon,
+  LayoutDashboard,
+  BarChart,
+  TrendingUp
 } from "lucide-react";
 import CalendarSyncIcon from "@/components/icons/CalendarSyncIcon";
 import { Link } from "react-router-dom";
@@ -54,6 +58,86 @@ const Index = () => {
               <h3 className="text-xl font-semibold mb-2">Integração Completa</h3>
               <p className="text-gray-600">Conecte com seus sistemas existentes para um atendimento personalizado.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Dashboard Analytics Section - NOVA SEÇÃO */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">Dashboard Analítico de Desempenho</h2>
+          <p className="text-lg text-center mb-12 text-gray-600 max-w-3xl mx-auto">
+            Acompanhe e otimize seu negócio com análises detalhadas de todas as interações com seus clientes.
+          </p>
+          
+          <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src="/lovable-uploads/19756d8d-7697-46f4-9ad6-a1232ffae1df.png" 
+                alt="Dashboard Analítico Opus" 
+                className="w-full h-auto"
+              />
+            </div>
+            
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="bg-purple-100 p-2 rounded-lg">
+                  <BarChart className="w-6 h-6 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Análises Estratégicas</h3>
+                  <p className="text-gray-600">
+                    Visualize pontos fortes e oportunidades de melhoria nas conversas com seus clientes.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="bg-purple-100 p-2 rounded-lg">
+                  <TrendingUp className="w-6 h-6 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Comportamento dos Clientes</h3>
+                  <p className="text-gray-600">
+                    Identifique padrões de comportamento e adapte seu negócio às necessidades reais.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="bg-purple-100 p-2 rounded-lg">
+                  <Lightbulb className="w-6 h-6 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Recomendações Inteligentes</h3>
+                  <p className="text-gray-600">
+                    Receba sugestões concretas para melhorar seu atendimento e aumentar a satisfação.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="bg-purple-100 p-2 rounded-lg">
+                  <LayoutDashboard className="w-6 h-6 text-purple-600" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Personalizável e Intuitivo</h3>
+                  <p className="text-gray-600">
+                    Dashboard adaptável às necessidades específicas do seu negócio, com interface amigável.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="mt-4 text-sm text-gray-500 italic">
+                * Análises avançadas com inteligência artificial disponíveis apenas no plano Assistente Sênior.
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <Button id="verDashboard" onClick={() => callAssistente("Olá, gostaria de saber mais sobre o dashboard analítico")} className="bg-gradient-to-r from-purple-600 to-purple-400 hover:from-purple-700 hover:to-purple-500 text-white font-medium px-6 py-3 rounded-full">
+              Conheça nosso Dashboard Analítico
+            </Button>
           </div>
         </div>
       </section>
