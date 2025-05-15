@@ -199,11 +199,15 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="rounded-xl overflow-hidden shadow-lg order-1 lg:order-2 relative">
-              <div className="absolute inset-0 backdrop-blur-md bg-white/30 z-10"></div>
+            <div className="rounded-xl overflow-hidden shadow-lg order-1 lg:order-2 space-y-6">
               <img 
-                src="/lovable-uploads/f88043ea-4c83-480f-84a7-61df0f42c8ef.png" 
-                alt="Dashboard de Conversões Opus" 
+                src="/lovable-uploads/7595fd2f-5a20-467c-aa1e-80c44e77bb9c.png" 
+                alt="Dashboard de Indicadores Opus" 
+                className="w-full h-auto"
+              />
+              <img 
+                src="/lovable-uploads/a7536694-c8fd-4382-88c7-211a9f8b1265.png" 
+                alt="Tabela de Conversões Opus" 
                 className="w-full h-auto"
               />
             </div>
@@ -226,8 +230,7 @@ const Index = () => {
           </p>
           
           <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
-            <div className="rounded-xl overflow-hidden shadow-lg relative">
-              <div className="absolute inset-0 backdrop-blur-md bg-white/30 z-10"></div>
+            <div className="rounded-xl overflow-hidden shadow-lg">
               <img 
                 src="/lovable-uploads/2131abd7-15eb-46b2-94bc-893724744281.png" 
                 alt="Acompanhamento de Conversas Opus" 
