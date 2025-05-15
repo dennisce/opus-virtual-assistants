@@ -202,7 +202,7 @@ const Index = () => {
             <div className="rounded-xl overflow-hidden shadow-lg order-1 lg:order-2 relative">
               <div className="absolute inset-0 backdrop-blur-md bg-white/30 z-10"></div>
               <img 
-                src="/lovable-uploads/298c7438-cc83-4530-bf48-965d11b10f86.png" 
+                src="/lovable-uploads/f88043ea-4c83-480f-84a7-61df0f42c8ef.png" 
                 alt="Dashboard de Conversões Opus" 
                 className="w-full h-auto"
               />
@@ -229,7 +229,7 @@ const Index = () => {
             <div className="rounded-xl overflow-hidden shadow-lg relative">
               <div className="absolute inset-0 backdrop-blur-md bg-white/30 z-10"></div>
               <img 
-                src="/lovable-uploads/48a17f48-7ba9-48a6-968a-361ae10373b9.png" 
+                src="/lovable-uploads/2131abd7-15eb-46b2-94bc-893724744281.png" 
                 alt="Acompanhamento de Conversas Opus" 
                 className="w-full h-auto"
               />
