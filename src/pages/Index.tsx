@@ -25,7 +25,7 @@ import CalendarSyncIcon from "@/components/icons/CalendarSyncIcon";
 import { Link } from "react-router-dom";
 
 const callAssistente = (msg) => {
-  const numero = '5585920018032';
+  const numero = '5585920021719';
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
 };
