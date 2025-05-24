@@ -44,13 +44,7 @@ const CookieConsent = () => {
             >
               Continuar Navegando
             </Button>
-            <Button 
-              onClick={handleLeave}
-              variant="outline"
-              className="flex-1 text-gray-600 hover:text-gray-800"
-            >
-              Sair do Site
-            </Button>
+            
           </div>
         </div>
       </div>

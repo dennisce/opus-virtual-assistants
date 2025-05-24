@@ -6,7 +6,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { CheckCircle, MessageCircle, Calendar, BarChart3, Zap, Shield, Users, TrendingUp, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import CookieConsent from "@/components/CookieConsent";
-
+const callAssistente = (msg) => {
+  const numero = '5585920021719'; // sem o '+' e sem espaços
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
+  window.open(url, '_blank');
+}
 const Index = () => {
   return (
     <div className="min-h-screen">
@@ -27,13 +31,13 @@ const Index = () => {
                 Automatize suas conversas, agende compromissos e impulsione suas vendas com nossa plataforma de IA
               </p>
               <div className="space-x-4">
-                <Button size="lg">Começar Agora</Button>
-                <Button variant="outline" size="lg">Saiba Mais</Button>
+                <Button size="lg" onClick={() => callAssistente("Oi, quero automatizar meu Whatsapp agora!")}>Começar Agora</Button>
+                <Button variant="outline" onClick={() => callAssistente("Oi, gostaria saber mais sobre esse assistente")} size="lg">Saiba Mais</Button>
               </div>
             </div>
             <div>
               <img 
-                src="/lovable-uploads/4e95a559-f199-4999-a979-949952f20554.png" 
+                src="/lovable-uploads/2131abd7-15eb-46b2-94bc-893724744281.png" 
                 alt="Atendimento Inteligente" 
                 className="w-full rounded-lg shadow-lg"
               />
@@ -165,7 +169,7 @@ const Index = () => {
                 <TrendingUp className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-2">ROI Comprovado</h3>
-              <p className="text-gray-600">Aumento médio de 300% na taxa de conversão</p>
+              <p className="text-gray-600">Aumento sua taxa de conversão por não perder nenhuma oportunidade</p>
             </div>
           </div>
         </div>
@@ -181,8 +185,8 @@ const Index = () => {
             Junte-se a centenas de empresas que já revolucionaram 
             seu atendimento com nossa plataforma
           </p>
-          <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 text-lg px-8 py-6">
-            Começar Agora Gratuitamente
+          <Button size="lg" onClick={() => callAssistente("Oi, gostaria de começar agora esse assistente")} className="bg-white text-purple-600 hover:bg-gray-100 text-lg px-8 py-6">
+            Começar Agora
           </Button>
         </div>
       </section>
@@ -192,12 +196,21 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center text-gray-600">
           <p>© {new Date().getFullYear()} Opus - Assistentes Inteligentes. Todos os direitos reservados.</p>
           <div className="mt-4">
+            Ao usar nossos serviços, você concorda com nossa&nbsp;
             <Link 
               to="/politica-de-privacidade" 
               className="text-purple-600 hover:text-purple-800 underline"
             >
               Política de Privacidade
             </Link>
+            &nbsp;e&nbsp;
+            <Link 
+              to="/termos-de-uso" 
+              className="text-purple-600 hover:text-purple-800 underline"
+            >
+              Termo de uso
+            </Link>
+
           </div>
         </div>
       </footer>

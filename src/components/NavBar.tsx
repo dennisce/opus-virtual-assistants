@@ -5,17 +5,19 @@ import { UserCircle } from "lucide-react";
 
 const NavBar = () => {
   return (
-    <header className=" absolute top-0 left-0 z-50 w-full flex items-center justify-between p-2 shadow-md">
+    <header className=" absolute top-0 left-0 z-50 w-full flex items-center justify-between p-1 shadow-md">
       {/* Logo na esquerda */}
       <div className="flex items-center">
-        <img src="/Opus.svg" alt="Logo Opus" className="h-10" />
+        <a href="/" className="flex items-center">
+          <img src="/Opus.svg" alt="Logo Opus" className="h-5" />
+        </a>
       </div>
 
       {/* Botão de login na direita */}
       <div>
       <a
         href="https://dashboard.opusapp.com.br"
-        className="px-6 py-2 bg-gradient-to-r from-purple-600 to-purple-400 text-white font-thin rounded-full shadow-lg hover:ring-2 hover:ring-purple-500 hover:from-purple-700 hover:to-purple-500 transition-all duration-300"
+        className="px-3 py-1 bg-gradient-to-r from-purple-600 to-purple-400 text-white font-thin rounded-full shadow-lg hover:ring-2 hover:ring-purple-500 hover:from-purple-700 hover:to-purple-500 transition-all duration-300"
       >
         Login
       </a>
