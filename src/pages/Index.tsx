@@ -1,16 +1,19 @@
 import { useState, useEffect } from "react";
 import NavBar from "@/components/NavBar";
 import ParallaxHero from "@/components/ParallaxHero";
+import InteractiveFeaturesSection from "@/components/InteractiveFeaturesSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, MessageCircle, Calendar, BarChart3, Zap, Shield, Users, TrendingUp, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import CookieConsent from "@/components/CookieConsent";
+
 const callAssistente = (msg) => {
   const numero = '5585920021719'; // sem o '+' e sem espaços
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
 }
+
 const Index = () => {
   return (
     <div className="min-h-screen">
@@ -46,58 +49,8 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Features Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-              Revolucione seu Atendimento
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Nossa plataforma oferece soluções completas para automatizar e otimizar 
-              seu atendimento no WhatsApp com inteligência artificial avançada
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
-                  <MessageCircle className="w-8 h-8 text-white" />
-                </div>
-                <CardTitle className="text-2xl mb-2">Respostas Automáticas</CardTitle>
-                <CardDescription className="text-gray-600">
-                  IA avançada responde seus clientes 24/7 com precisão e naturalidade
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
-                  <Calendar className="w-8 h-8 text-white" />
-                </div>
-                <CardTitle className="text-2xl mb-2">Agendamento Inteligente</CardTitle>
-                <CardDescription className="text-gray-600">
-                  Sistema automatizado de agendamentos com confirmações e lembretes
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
-                  <BarChart3 className="w-8 h-8 text-white" />
-                </div>
-                <CardTitle className="text-2xl mb-2">Analytics Avançado</CardTitle>
-                <CardDescription className="text-gray-600">
-                  Relatórios detalhados e insights para otimizar seu atendimento
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          </div>
-        </div>
-      </section>
+      {/* Interactive Features Section */}
+      <InteractiveFeaturesSection />
 
       {/* Conversion Tracking Section */}
       <section className="py-20 bg-gray-50">
