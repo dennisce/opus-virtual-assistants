@@ -8,6 +8,7 @@ interface Feature {
   title: string;
   description: string;
   icon: React.ElementType;
+  img: string;
 }
 
 const features: Feature[] = [
@@ -15,121 +16,141 @@ const features: Feature[] = [
     id: 1,
     title: "Resposta automática a dúvidas frequentes",
     description: "Atenda seus clientes 24 horas por dia, 7 dias por semana, solucionando as principais dúvidas instantaneamente, sem sobrecarregar sua equipe. Proporcione agilidade e aumente a satisfação, seja você um pequeno comércio ou uma grande operação com alto volume de contatos.",
-    icon: Bot
+    icon: Bot,
+    img: "/features/img11.png"
   },
   {
     id: 2,
     title: "Gestão completa de agendamentos",
     description: "Deixe o agente cuidar de todo o fluxo de agendamentos: marca, confirma, cancela e remarca compromissos sem esforço manual. Transforme o WhatsApp em sua agenda inteligente, facilitando o dia a dia do pequeno empreendedor e otimizando o tempo de grandes empresas com múltiplos clientes.",
-    icon: Calendar
+    icon: Calendar,
+    img: "/features/img6.png"
   },
   {
     id: 3,
     title: "Geração de leads qualificados",
     description: "Capte automaticamente novos clientes interessados em seus produtos ou serviços. A IA identifica oportunidades de negócio, faz perguntas estratégicas e encaminha leads já filtrados para você, potencializando vendas para negócios de qualquer porte.",
-    icon: Users
+    icon: Users,
+    img: "/features/img9.png"
   },
   {
     id: 4,
     title: "Integração com sistemas externos",
     description: "Conecte seu WhatsApp ao seu sistema de gestão, CRM, loja virtual ou plataforma de pagamentos, automatizando tarefas e centralizando informações. Pequenos negócios ganham profissionalismo; grandes empresas aceleram processos e reduzem falhas.",
-    icon: Link
+    icon: Link,
+    img: "/features/img4.png"
   },
   {
     id: 5,
     title: "Notificações e lembretes automáticos",
     description: "Aumente a presença e a recorrência dos seus clientes com lembretes automáticos de agendamentos, pagamentos, entregas e promoções. Evite esquecimentos, reduza faltas e mantenha seu cliente sempre próximo, independentemente do tamanho da sua empresa.",
-    icon: Bell
+    icon: Bell,
+    img: "/features/img.png"
   },
   {
     id: 6,
     title: "Envio de promoções e novidades",
     description: "Divulgue ofertas, lançamentos e eventos automaticamente para seus contatos. Garanta que seus clientes recebam novidades de forma personalizada, aumentando as chances de conversão e promovendo campanhas segmentadas para todos os públicos.",
-    icon: Megaphone
+    icon: Megaphone,
+    img: "/features/img5.png"
   },
   {
     id: 7,
     title: "Pesquisa de satisfação",
     description: "Colete feedbacks valiosos direto no WhatsApp ao final de cada atendimento, serviço ou compra. Melhore a experiência do cliente de forma contínua e utilize os dados para ajustar processos, seja na pequena empresa familiar ou em operações de grande escala.",
-    icon: Star
+    icon: Star,
+    img: "/features/img1.png"
   },
   {
     id: 8,
     title: "Realização de vendas automatizadas",
     description: "Transforme conversas em vendas, guiando o cliente até a finalização do pedido de forma 100% automática. Pequenos negócios conquistam mais vendas sem esforço, enquanto grandes players otimizam o funil e aumentam o ticket médio.",
-    icon: ShoppingCart
+    icon: ShoppingCart,
+    img: "/features/img8.png"
   },
   {
     id: 9,
     title: "Recebimento de pagamentos via link",
     description: "Envie links de pagamento seguros e receba diretamente pelo WhatsApp, facilitando o fechamento de vendas e reduzindo inadimplência. Uma solução ágil tanto para quem vende de forma autônoma quanto para grandes redes.",
-    icon: CreditCard
+    icon: CreditCard,
+    img: "/features/img14.png"
   },
   {
     id: 10,
     title: "Suporte a múltiplos atendentes",
     description: "Gerencie atendimentos simultâneos, direcionando conversas automaticamente para diferentes setores ou membros da equipe. Pequenos negócios podem crescer sem perder o controle; grandes empresas ganham escala e organização.",
-    icon: UserCheck
+    icon: UserCheck,
+    img: "/features/img15.png"
   },
   {
     id: 11,
     title: "Segmentação automática de clientes",
     description: "Identifique automaticamente o perfil de cada cliente e segmente o atendimento conforme interesses, histórico e comportamento. Proporcione experiências personalizadas para todos e direcione campanhas com maior precisão, nivelando o jogo entre pequenos e grandes.",
-    icon: Users
+    icon: Users,
+    img: "/features/img9.png"
   },
   {
     id: 12,
     title: "Análise de comportamento e relatórios",
     description: "Acompanhe métricas essenciais, descubra padrões de comportamento e tome decisões baseadas em dados. Receba relatórios automatizados com insights que ajudam tanto a pequena loja a crescer quanto grandes empresas a maximizar seus resultados.",
-    icon: BarChart3
+    icon: BarChart3,
+    img: "/features/img13.png"
   },
   {
     id: 13,
     title: "Encaminhamento para atendimento humano",
     description: "Quando necessário, o agente transfere a conversa para um atendente humano, mantendo todo o histórico do cliente. Assim, você garante um atendimento humanizado e ágil, sem perder o contexto.",
-    icon: ArrowRightLeft
+    icon: ArrowRightLeft,
+    img: "/features/img15.png"
   },
   {
     id: 14,
     title: "Coleta e envio de documentos",
     description: "Solicite e receba arquivos, documentos ou fotos diretamente pelo WhatsApp, facilitando processos como cadastro, orçamento, suporte técnico e comprovação de entregas. Agilidade e segurança para qualquer negócio.",
-    icon: FileText
+    icon: FileText,
+    img: "/features/img7.png"
   },
   {
     id: 15,
     title: "Mensagens personalizadas por perfil",
     description: "Programe mensagens automáticas adaptadas ao horário, à campanha ativa ou ao perfil de cada cliente. Amplie o engajamento e mostre que cada contato é especial, independentemente do volume de atendimentos.",
-    icon: MessageSquare
+    icon: MessageSquare,
+    img: "/features/img9.png"
   },
   {
     id: 16,
     title: "Atendimento multilíngue",
     description: "Atenda clientes em diferentes idiomas automaticamente, ampliando suas oportunidades de negócio para além das fronteiras e profissionalizando sua comunicação, seja qual for o porte da empresa.",
-    icon: Globe
+    icon: Globe,
+    img: "/features/img15.png"
   },
   {
     id: 17,
     title: "Validação de informações cadastrais",
     description: "Garanta dados atualizados dos clientes, validando informações como nome, CPF, endereço ou e-mail via WhatsApp, automatizando processos e aumentando a confiabilidade do seu cadastro.",
-    icon: CheckCircle
+    icon: CheckCircle,
+    img: "/features/img12.png"
   },
   {
     id: 18,
     title: "Envio de arquivos e PDFs",
     description: "Compartilhe rapidamente contratos, orçamentos, tutoriais ou qualquer arquivo necessário com seus clientes, tornando o atendimento mais completo e reduzindo etapas manuais.",
-    icon: Send
+    icon: Send,
+    img: "/features/img7.png"
   },
   {
     id: 19,
     title: "Respostas baseadas em contexto",
     description: "A IA entende o histórico de cada cliente, oferecendo respostas personalizadas e relevantes, o que aumenta a eficiência e a satisfação de quem busca atendimento contínuo e inteligente.",
-    icon: Clock
+    icon: Clock,
+    img: "/features/img2.png"
   },
   {
     id: 20,
     title: "Consulta de status de pedidos",
     description: "Permita que seus clientes consultem o andamento de pedidos, entregas ou solicitações diretamente pelo WhatsApp, trazendo mais transparência, autonomia e profissionalismo para seu negócio.",
-    icon: Search
+    icon: Search,
+    img: "/features/img.png"
   }
 ];
 
@@ -144,12 +165,19 @@ const InteractiveFeaturesSection = () => {
     setSelectedFeature(null);
   };
 
+  const callAssistente = (msg) => {
+    const numero = '5585920021719'; // sem o '+' e sem espaços
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
+    handleClose;
+    window.open(url, '_blank');
+  }
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-            Funcionalidades Completas
+            Muitas possibilidades com a Opus
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Descubra como nossa plataforma pode transformar seu atendimento no WhatsApp
@@ -206,7 +234,7 @@ const InteractiveFeaturesSection = () => {
                 
                 <div className="mb-6">
                   <img 
-                    src={`https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop&crop=center`}
+                    src={selectedFeature.img}
                     alt={selectedFeature.title}
                     className="w-full h-64 object-cover rounded-lg"
                   />
@@ -218,10 +246,10 @@ const InteractiveFeaturesSection = () => {
 
                 <div className="mt-6 pt-6 border-t border-gray-200">
                   <button
-                    onClick={handleClose}
+                    onClick={ () => callAssistente("Oi, como funciona a funcionalidade de " + selectedFeature.title)}
                     className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300"
                   >
-                    Fechar
+                    Fale com a Elli
                   </button>
                 </div>
               </div>
