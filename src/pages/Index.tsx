@@ -4,7 +4,7 @@ import ParallaxHero from "@/components/ParallaxHero";
 import InteractiveFeaturesSection from "@/components/InteractiveFeaturesSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, MessageCircle, Calendar, BarChart3, Zap, Shield, Users, TrendingUp, X } from "lucide-react";
+import { CheckCircle, MessageCircle, Calendar, BarChart3, Zap, Shield, Users, TrendingUp, X, FileText, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
 import CookieConsent from "@/components/CookieConsent";
 
@@ -78,6 +78,81 @@ const Index = () => {
                 alt="Relatórios Detalhados" 
                 className="w-full rounded-lg shadow-lg"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Daily Reports Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              Não perca mais nada
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Receba relatórios diários automáticos sobre todas as pendências e oportunidades perdidas, 
+              garantindo que nenhum cliente seja esquecido
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <img 
+                src="/lovable-uploads/f8c3f461-7773-4c69-bb1e-37dcbe653d98.png" 
+                alt="Relatório de Pendências" 
+                className="w-full rounded-lg shadow-lg"
+              />
+            </div>
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <AlertTriangle className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Identificação de Pendências</h3>
+                  <p className="text-gray-600">
+                    Nossa IA monitora constantemente todas as conversas e identifica automaticamente 
+                    clientes que ficaram sem resposta ou com questões em aberto.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FileText className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Relatórios Detalhados</h3>
+                  <p className="text-gray-600">
+                    Receba diariamente um resumo completo com todas as pendências, incluindo 
+                    sugestões de mensagens personalizadas para reativar cada cliente.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <BarChart3 className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Recuperação de Oportunidades</h3>
+                  <p className="text-gray-600">
+                    Transforme pendências em vendas com follow-ups inteligentes e automatizados, 
+                    aumentando sua taxa de conversão e satisfação do cliente.
+                  </p>
+                </div>
+              </div>
+
+              <div className="pt-4">
+                <Button 
+                  size="lg" 
+                  onClick={() => callAssistente("Oi, quero saber mais sobre os relatórios de pendências")}
+                  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+                >
+                  Saiba Mais sobre Relatórios
+                </Button>
+              </div>
             </div>
           </div>
         </div>
