@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import NavBar from "@/components/NavBar";
 import ParallaxHero from "@/components/ParallaxHero";
@@ -217,7 +218,7 @@ const Index = () => {
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Plano Jr */}
-            <Card className="relative border-2 border-gray-200 hover:border-purple-300 transition-colors">
+            <Card className="relative border-2 border-gray-200 hover:border-purple-300 transition-all duration-300 hover:shadow-xl">
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-2xl font-bold text-gray-800">Assistente Jr.</CardTitle>
                 <div className="mt-4">
@@ -258,8 +259,9 @@ const Index = () => {
                 </ul>
                 <div className="pt-6">
                   <Button 
-                    className="w-full bg-purple-600 hover:bg-purple-700"
+                    className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 transform hover:scale-105 transition-all duration-200"
                     onClick={() => callAssistente("Oi, quero contratar o Assistente Jr. por R$ 200/mês")}
+                    size="lg"
                   >
                     Contratar Agora
                   </Button>
@@ -268,9 +270,9 @@ const Index = () => {
             </Card>
 
             {/* Plano Pleno */}
-            <Card className="relative border-2 border-blue-400 hover:border-blue-500 transition-colors transform scale-105">
+            <Card className="relative border-2 border-blue-400 hover:border-blue-500 transition-all duration-300 transform scale-105 hover:scale-110 shadow-xl hover:shadow-2xl">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                <span className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
                   Mais Popular
                 </span>
               </div>
@@ -310,8 +312,9 @@ const Index = () => {
                 </ul>
                 <div className="pt-6">
                   <Button 
-                    className="w-full bg-blue-600 hover:bg-blue-700"
+                    className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-200"
                     onClick={() => callAssistente("Oi, quero contratar o Assistente Pleno por R$ 550/mês")}
+                    size="lg"
                   >
                     Contratar Agora
                   </Button>
@@ -320,7 +323,7 @@ const Index = () => {
             </Card>
 
             {/* Plano Sênior */}
-            <Card className="relative border-2 border-gray-200 hover:border-purple-300 transition-colors">
+            <Card className="relative border-2 border-gray-200 hover:border-purple-300 transition-all duration-300 hover:shadow-xl">
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-2xl font-bold text-gray-800">Assistente Sênior</CardTitle>
                 <div className="mt-4">
@@ -365,8 +368,9 @@ const Index = () => {
                 </ul>
                 <div className="pt-6">
                   <Button 
-                    className="w-full bg-purple-600 hover:bg-purple-700"
+                    className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 transform hover:scale-105 transition-all duration-200"
                     onClick={() => callAssistente("Oi, quero contratar o Assistente Sênior por R$ 1.320/mês")}
+                    size="lg"
                   >
                     Contratar Agora
                   </Button>
