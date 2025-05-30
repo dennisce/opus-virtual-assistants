@@ -216,7 +216,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {/* Plano Jr */}
             <Card className="relative border-2 border-gray-200 hover:border-purple-300 transition-all duration-300 hover:shadow-xl">
               <CardHeader className="text-center pb-4">
@@ -373,6 +373,70 @@ const Index = () => {
                     size="lg"
                   >
                     Contratar Agora
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Plano CEO */}
+            <Card className="relative border-2 border-gradient-to-r from-amber-400 to-orange-500 hover:border-amber-500 transition-all duration-300 hover:shadow-2xl bg-gradient-to-br from-amber-50 to-orange-50">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
+                  Enterprise
+                </span>
+              </div>
+              <CardHeader className="text-center pb-4">
+                <CardTitle className="text-2xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">Assistente CEO</CardTitle>
+                <div className="mt-4">
+                  <span className="text-3xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">PERSONALIZADO</span>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-3">
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700 font-semibold">Tudo do plano Sênior</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Atendimentos Ilimitados e SLA Prioritário</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Consultoria Estratégica Mensal</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Suporte a Multitenancy / Filiais</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Reconhecimento e Processamento de Documentos</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">IA Generativa Personalizada com fine tuning e RAG</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">Automatizações Inteligentes de Processos</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700 font-semibold">Gerente de Conta Dedicado</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700 font-semibold">API Personalizada e Webhooks</span>
+                  </li>
+                </ul>
+                <div className="pt-6">
+                  <Button 
+                    className="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 transform hover:scale-105 transition-all duration-200 text-white font-semibold"
+                    onClick={() => callAssistente("Oi, quero saber mais sobre o Assistente CEO Enterprise")}
+                    size="lg"
+                  >
+                    Solicitar Proposta
                   </Button>
                 </div>
               </CardContent>
