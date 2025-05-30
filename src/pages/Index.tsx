@@ -4,7 +4,7 @@ import ParallaxHero from "@/components/ParallaxHero";
 import InteractiveFeaturesSection from "@/components/InteractiveFeaturesSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, MessageCircle, Calendar, BarChart3, Zap, Shield, Users, TrendingUp, X, FileText, AlertTriangle } from "lucide-react";
+import { CheckCircle, MessageCircle, Calendar, BarChart3, Zap, Shield, Users, TrendingUp, X, FileText, AlertTriangle, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import CookieConsent from "@/components/CookieConsent";
 
@@ -198,6 +198,208 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2">ROI Comprovado</h3>
               <p className="text-gray-600">Aumento sua taxa de conversão por não perder nenhuma oportunidade</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              Escolha o Plano Ideal
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Temos o assistente perfeito para cada tipo de negócio
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Plano Jr */}
+            <Card className="relative border-2 border-gray-200 hover:border-purple-300 transition-colors">
+              <CardHeader className="text-center pb-4">
+                <CardTitle className="text-2xl font-bold text-gray-800">Assistente Jr.</CardTitle>
+                <div className="mt-4">
+                  <span className="text-4xl font-bold text-purple-600">R$ 200</span>
+                  <span className="text-gray-600">/mês</span>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-3">
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Processamento de texto inteligente</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Até 1.000 atendimentos/mês</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Treinamento personalizado</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Sem taxa de implantação</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Aproveita seu WhatsApp já existente</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Aprendizado contínuo baseado no seu negócio</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Adaptação gradual à identidade da empresa</span>
+                  </li>
+                </ul>
+                <div className="pt-6">
+                  <Button 
+                    className="w-full bg-purple-600 hover:bg-purple-700"
+                    onClick={() => callAssistente("Oi, quero contratar o Assistente Jr. por R$ 200/mês")}
+                  >
+                    Contratar Agora
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Plano Pleno */}
+            <Card className="relative border-2 border-blue-400 hover:border-blue-500 transition-colors transform scale-105">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                  Mais Popular
+                </span>
+              </div>
+              <CardHeader className="text-center pb-4">
+                <CardTitle className="text-2xl font-bold text-gray-800">Assistente Pleno</CardTitle>
+                <div className="mt-4">
+                  <span className="text-4xl font-bold text-blue-600">R$ 550</span>
+                  <span className="text-gray-600">/mês</span>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-3">
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600 font-semibold">Tudo do plano Jr.</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Modelo de IA avançado com conversação por áudio</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Até 2.000 atendimentos/mês</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Inteligência de contexto aprimorada</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Integração com Google Calendar</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Personalização avançada da identidade empresarial</span>
+                  </li>
+                </ul>
+                <div className="pt-6">
+                  <Button 
+                    className="w-full bg-blue-600 hover:bg-blue-700"
+                    onClick={() => callAssistente("Oi, quero contratar o Assistente Pleno por R$ 550/mês")}
+                  >
+                    Contratar Agora
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Plano Sênior */}
+            <Card className="relative border-2 border-gray-200 hover:border-purple-300 transition-colors">
+              <CardHeader className="text-center pb-4">
+                <CardTitle className="text-2xl font-bold text-gray-800">Assistente Sênior</CardTitle>
+                <div className="mt-4">
+                  <span className="text-4xl font-bold text-purple-600">R$ 1.320</span>
+                  <span className="text-gray-600">/mês</span>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-3">
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600 font-semibold">Tudo do plano Pleno</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Reconhecimento e análise de imagens</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Sugestão de produtos baseada em imagens</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Até 4.000 atendimentos/mês</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">O melhor modelo de IA do mercado</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Aprendizado profundo e contínuo</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600">Adaptação completa à identidade do seu negócio</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-600 font-semibold">Integrações com sistemas externos</span>
+                  </li>
+                </ul>
+                <div className="pt-6">
+                  <Button 
+                    className="w-full bg-purple-600 hover:bg-purple-700"
+                    onClick={() => callAssistente("Oi, quero contratar o Assistente Sênior por R$ 1.320/mês")}
+                  >
+                    Contratar Agora
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Observações importantes */}
+          <div className="mt-16 bg-white rounded-lg p-8 shadow-sm">
+            <h3 className="text-xl font-semibold mb-4 text-center text-gray-800">Informações Importantes</h3>
+            <div className="space-y-3 text-gray-600 max-w-4xl mx-auto">
+              <p className="flex items-start space-x-2">
+                <span className="text-blue-600 font-semibold">•</span>
+                <span>Apenas o <strong>Assistente Sênior</strong> inclui integrações com sistemas externos (ERP, CRM, e-commerce, etc.)</span>
+              </p>
+              <p className="flex items-start space-x-2">
+                <span className="text-blue-600 font-semibold">•</span>
+                <span>As customizações para integrações com sistemas externos precisam ser orçadas e analisadas caso a caso</span>
+              </p>
+              <p className="flex items-start space-x-2">
+                <span className="text-blue-600 font-semibold">•</span>
+                <span>
+                  Para maiores informações, consulte nossos{" "}
+                  <Link to="/termos-de-uso" className="text-purple-600 hover:text-purple-800 underline">
+                    Termos de Uso
+                  </Link>
+                  {" "}e{" "}
+                  <Link to="/politica-de-privacidade" className="text-purple-600 hover:text-purple-800 underline">
+                    Política de Privacidade
+                  </Link>
+                </span>
+              </p>
             </div>
           </div>
         </div>
