@@ -19,7 +19,9 @@ export const nl = {
     title: "Revolutioneer Uw Klantenservice met AI",
     subtitle: "Automatiseer reacties, plan afspraken en verhoog uw conversies met intelligente virtuele assistenten voor WhatsApp.",
     cta: "Nu Beginnen",
-    watchDemo: "Demo Bekijken"
+    watchDemo: "Demo Bekijken",
+    startNow: "Nu Beginnen",
+    learnMore: "Meer Leren"
   },
   conversion: {
     title: "Bewezen Resultaten",
@@ -46,7 +48,20 @@ export const nl = {
       realTimeMetrics: "Real-time Metrics",
       detailedReports: "Gedetailleerde Rapporten",
       performanceAnalysis: "Prestatie-analyse"
-    }
+    },
+    identification: {
+      title: "Identificatie Openstaande Zaken",
+      description: "Intelligent systeem dat automatisch klanten met openstaande zaken en gemiste kansen identificeert."
+    },
+    detailed: {
+      title: "Gedetailleerde Rapporten",
+      description: "Complete prestatie-analyse, conversie-metrics en aanpasbare rapporten voor besluitvorming."
+    },
+    recovery: {
+      title: "Verkoop Herstel",
+      description: "Geautomatiseerde strategieën om verloren verkopen te herstellen en conversieratio's te verhogen."
+    },
+    learnMore: "Meer Leren"
   },
   benefits: {
     title: "Waarom Onze Assistenten Kiezen?",
@@ -64,6 +79,22 @@ export const nl = {
         title: "Gedetailleerde Analyses",
         description: "Volledige rapporten om uw klantenservice te optimaliseren"
       }
+    },
+    fastImplementation: {
+      title: "Snelle Implementatie",
+      description: "Volledige setup in minder dan 24 uur met gespecialiseerde ondersteuning"
+    },
+    totalSecurity: {
+      title: "Totale Veiligheid",
+      description: "Gegevens beschermd met end-to-end encryptie en AVG-naleving"
+    },
+    specializedSupport: {
+      title: "Gespecialiseerde Ondersteuning",
+      description: "Toegewijd technisch team 24/7 beschikbaar om uw bedrijf te ondersteunen"
+    },
+    provenROI: {
+      title: "Bewezen ROI",
+      description: "Return on investment binnen 30 dagen met meetbare metrics"
     }
   },
   pricing: {
@@ -72,31 +103,81 @@ export const nl = {
     monthly: "Maandelijks",
     annually: "Jaarlijks",
     save: "Bespaar 20%",
+    popular: "Meest Populair",
+    enterprise: "Enterprise",
+    contractNow: "Nu Contracteren",
+    requestProposal: "Voorstel Aanvragen",
     plans: {
-      basic: {
-        name: "Basis",
-        description: "Perfect voor kleine bedrijven",
-        features: ["Tot 1.000 berichten/maand", "Automatische reacties", "E-mail ondersteuning"]
+      jr: {
+        name: "Junior",
+        features: [
+          "Tot 1.000 berichten/maand",
+          "Basis automatische reacties",
+          "E-mail ondersteuning",
+          "1 WhatsApp nummer",
+          "Basis rapporten"
+        ]
       },
-      pro: {
-        name: "Professioneel",
-        description: "Ideaal voor groeiende bedrijven",
-        features: ["Tot 5.000 berichten/maand", "Slimme planning", "Geavanceerde integraties", "Prioriteitsondersteuning"]
+      pleno: {
+        name: "Gemiddeld Niveau",
+        features: [
+          "✅ Alles van Junior plan",
+          "Tot 5.000 berichten/maand",
+          "Geavanceerde AI met leren",
+          "Slimme planning",
+          "CRM integraties",
+          "Prioriteitsondersteuning",
+          "Meerdere operators",
+          "Geavanceerde rapporten"
+        ]
       },
-      enterprise: {
-        name: "Enterprise",
-        description: "Voor grote organisaties",
-        features: ["Onbeperkte berichten", "Aangepaste AI", "Toegewijde ondersteuning", "Geavanceerde rapporten"]
+      senior: {
+        name: "Senior",
+        features: [
+          "✅ Alles van Gemiddeld plan",
+          "Tot 15.000 berichten/maand",
+          "AI aangepast voor uw bedrijf",
+          "Volledige verkoop automatisering",
+          "Integratie met eigen systemen",
+          "Gepersonaliseerde AI training",
+          "Toegewijde technische ondersteuning",
+          "✅ Eigen API voor integraties",
+          "Executive dashboard"
+        ]
+      },
+      ceo: {
+        name: "CEO",
+        features: [
+          "✅ Alles van Senior plan",
+          "Onbeperkte berichten",
+          "Exclusieve en gepersonaliseerde AI",
+          "Ontwikkeling aangepaste functies",
+          "Volledige ERP/CRM integratie",
+          "Maandelijkse strategische consultatie",
+          "24/7 ondersteuning met gegarandeerde SLA",
+          "Training voor hele team",
+          "✅ White label (uw merk)",
+          "✅ Toegewijde implementatie"
+        ]
       }
     },
-    cta: "Nu Beginnen",
-    mostPopular: "Meest Populair"
+    importantInfo: {
+      title: "Belangrijke Informatie",
+      points: [
+        "Alle plannen bevatten een gratis proefperiode van 7 dagen.",
+        "Opzegging kan op elk moment zonder boete of verplichting.",
+        "Door te contracteren, gaat u akkoord met onze Gebruiksvoorwaarden en Privacybeleid.",
+        "Prijzen kunnen jaarlijks worden aangepast volgens inflatie-indices.",
+        "Technische ondersteuning inbegrepen in alle plannen tijdens kantooruren."
+      ]
+    }
   },
   cta: {
     title: "Klaar om Uw Klantenservice te Transformeren?",
     subtitle: "Sluit je aan bij duizenden bedrijven die hun WhatsApp al hebben geautomatiseerd",
     button: "Gratis Beginnen",
-    trial: "7 dagen gratis proefperiode"
+    trial: "7 dagen gratis proefperiode",
+    startNow: "Nu Beginnen"
   },
   footer: {
     description: "Klantenservice transformeren met kunstmatige intelligentie.",
@@ -109,7 +190,8 @@ export const nl = {
     legal: "Juridisch",
     privacyPolicy: "Privacybeleid",
     termsOfUse: "Gebruiksvoorwaarden",
-    copyright: "© 2024 Opus. Alle rechten voorbehouden."
+    copyright: "© 2024 Opus. Alle rechten voorbehouden.",
+    disclaimer: "Door onze service te gebruiken, gaat u akkoord met ons"
   },
   features: {
     title: "Krachtige Functies",
@@ -196,6 +278,58 @@ export const nl = {
       orderStatus: {
         title: "Bestellingsstatus",
         description: "Automatische bestellingsstatusquery's, bezorgtracking en real-time updates."
+      }
+    }
+  },
+  privacyPolicy: {
+    title: "Privacybeleid",
+    lastUpdated: "Laatst bijgewerkt: [Datum]",
+    sections: {
+      introduction: {
+        title: "1. Introductie",
+        content: "Dit Privacybeleid beschrijft hoe Opus uw persoonlijke informatie verzamelt, gebruikt en beschermt."
+      },
+      dataCollection: {
+        title: "2. Gegevensverzameling",
+        content: "We verzamelen informatie die u ons direct verstrekt en automatische gebruiksgegevens."
+      },
+      dataUse: {
+        title: "3. Gegevensgebruik",
+        content: "We gebruiken uw gegevens om onze diensten te leveren en te verbeteren."
+      },
+      dataProtection: {
+        title: "4. Gegevensbescherming",
+        content: "We implementeren beveiligingsmaatregelen om uw informatie te beschermen."
+      },
+      contact: {
+        title: "5. Contact",
+        content: "Voor privacyvragen, neem contact met ons op."
+      }
+    }
+  },
+  termsOfUse: {
+    title: "Gebruiksvoorwaarden",
+    lastUpdated: "Laatst bijgewerkt: [Datum]",
+    sections: {
+      acceptance: {
+        title: "1. Acceptatie van Voorwaarden",
+        content: "Door onze diensten te gebruiken, gaat u akkoord met deze voorwaarden."
+      },
+      services: {
+        title: "2. Dienstbeschrijving",
+        content: "We bieden AI virtuele assistenten voor WhatsApp."
+      },
+      responsibilities: {
+        title: "3. Gebruikersverantwoordelijkheden",
+        content: "U bent verantwoordelijk voor het juiste gebruik van de diensten."
+      },
+      limitations: {
+        title: "4. Beperkingen",
+        content: "Onze diensten worden geleverd 'zoals ze zijn'."
+      },
+      contact: {
+        title: "5. Contact",
+        content: "Voor vragen over de voorwaarden, neem contact met ons op."
       }
     }
   }

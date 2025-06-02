@@ -19,7 +19,9 @@ export const it = {
     title: "Rivoluziona il Tuo Servizio Clienti con l'IA",
     subtitle: "Automatizza le risposte, programma appuntamenti e aumenta le tue conversioni con assistenti virtuali intelligenti per WhatsApp.",
     cta: "Inizia Ora",
-    watchDemo: "Guarda Demo"
+    watchDemo: "Guarda Demo",
+    startNow: "Inizia Ora",
+    learnMore: "Scopri di Più"
   },
   conversion: {
     title: "Risultati Comprovati",
@@ -46,7 +48,20 @@ export const it = {
       realTimeMetrics: "Metriche in Tempo Reale",
       detailedReports: "Report Dettagliati",
       performanceAnalysis: "Analisi delle Prestazioni"
-    }
+    },
+    identification: {
+      title: "Identificazione Problemi Pendenti",
+      description: "Sistema intelligente che identifica automaticamente clienti con problemi pendenti e opportunità perse."
+    },
+    detailed: {
+      title: "Report Dettagliati",
+      description: "Analisi complete delle prestazioni, metriche di conversione e report personalizzabili per il processo decisionale."
+    },
+    recovery: {
+      title: "Recupero Vendite",
+      description: "Strategie automatizzate per recuperare vendite perse e aumentare i tassi di conversione."
+    },
+    learnMore: "Scopri di Più"
   },
   benefits: {
     title: "Perché Scegliere i Nostri Assistenti?",
@@ -64,6 +79,22 @@ export const it = {
         title: "Analisi Dettagliate",
         description: "Report completi per ottimizzare il tuo servizio clienti"
       }
+    },
+    fastImplementation: {
+      title: "Implementazione Rapida",
+      description: "Setup completo in meno di 24 ore con supporto specializzato"
+    },
+    totalSecurity: {
+      title: "Sicurezza Totale",
+      description: "Dati protetti con crittografia end-to-end e conformità GDPR"
+    },
+    specializedSupport: {
+      title: "Supporto Specializzato",
+      description: "Team tecnico dedicato disponibile 24/7 per assistere il tuo business"
+    },
+    provenROI: {
+      title: "ROI Provato",
+      description: "Ritorno sull'investimento entro 30 giorni con metriche misurabili"
     }
   },
   pricing: {
@@ -72,31 +103,81 @@ export const it = {
     monthly: "Mensile",
     annually: "Annuale",
     save: "Risparmia 20%",
+    popular: "Più Popolare",
+    enterprise: "Enterprise",
+    contractNow: "Contratta Ora",
+    requestProposal: "Richiedi Proposta",
     plans: {
-      basic: {
-        name: "Base",
-        description: "Perfetto per piccole aziende",
-        features: ["Fino a 1.000 messaggi/mese", "Risposte automatiche", "Supporto email"]
+      jr: {
+        name: "Junior",
+        features: [
+          "Fino a 1.000 messaggi/mese",
+          "Risposte automatiche di base",
+          "Supporto email",
+          "1 numero WhatsApp",
+          "Report di base"
+        ]
       },
-      pro: {
-        name: "Professionale",
-        description: "Ideale per aziende in crescita",
-        features: ["Fino a 5.000 messaggi/mese", "Programmazione intelligente", "Integrazioni avanzate", "Supporto prioritario"]
+      pleno: {
+        name: "Intermedio",
+        features: [
+          "✅ Tutto dal piano Junior",
+          "Fino a 5.000 messaggi/mese",
+          "IA avanzata con apprendimento",
+          "Programmazione intelligente",
+          "Integrazioni CRM",
+          "Supporto prioritario",
+          "Operatori multipli",
+          "Report avanzati"
+        ]
       },
-      enterprise: {
-        name: "Enterprise",
-        description: "Per grandi organizzazioni",
-        features: ["Messaggi illimitati", "IA personalizzata", "Supporto dedicato", "Report avanzati"]
+      senior: {
+        name: "Senior",
+        features: [
+          "✅ Tutto dal piano Intermedio",
+          "Fino a 15.000 messaggi/mese",
+          "IA personalizzata per il tuo business",
+          "Automazione vendite completa",
+          "Integrazione con sistemi proprietari",
+          "Addestramento IA personalizzato",
+          "Supporto tecnico dedicato",
+          "✅ API propria per integrazioni",
+          "Dashboard esecutiva"
+        ]
+      },
+      ceo: {
+        name: "CEO",
+        features: [
+          "✅ Tutto dal piano Senior",
+          "Messaggi illimitati",
+          "IA esclusiva e personalizzata",
+          "Sviluppo funzionalità personalizzate",
+          "Integrazione completa ERP/CRM",
+          "Consulenza strategica mensile",
+          "Supporto 24/7 con SLA garantito",
+          "Formazione per tutto il team",
+          "✅ White label (il tuo brand)",
+          "✅ Implementazione dedicata"
+        ]
       }
     },
-    cta: "Inizia Ora",
-    mostPopular: "Più Popolare"
+    importantInfo: {
+      title: "Informazioni Importanti",
+      points: [
+        "Tutti i piani includono un periodo di prova gratuito di 7 giorni.",
+        "La cancellazione può essere effettuata in qualsiasi momento, senza penali o vincoli.",
+        "Contraendo, accetti i nostri Termini di Utilizzo e Politica sulla Privacy.",
+        "I prezzi possono essere adeguati annualmente secondo gli indici di inflazione.",
+        "Supporto tecnico incluso in tutti i piani durante l'orario lavorativo."
+      ]
+    }
   },
   cta: {
     title: "Pronto a Trasformare il Tuo Servizio Clienti?",
     subtitle: "Unisciti a migliaia di aziende che hanno già automatizzato il loro WhatsApp",
     button: "Inizia Gratis",
-    trial: "Prova gratuita di 7 giorni"
+    trial: "Prova gratuita di 7 giorni",
+    startNow: "Inizia Ora"
   },
   footer: {
     description: "Trasformando il servizio clienti con l'intelligenza artificiale.",
@@ -109,7 +190,8 @@ export const it = {
     legal: "Legale",
     privacyPolicy: "Politica sulla Privacy",
     termsOfUse: "Termini di Utilizzo",
-    copyright: "© 2024 Opus. Tutti i diritti riservati."
+    copyright: "© 2024 Opus. Tutti i diritti riservati.",
+    disclaimer: "Utilizzando il nostro servizio, accetti la nostra"
   },
   features: {
     title: "Funzionalità Potenti",
@@ -196,6 +278,58 @@ export const it = {
       orderStatus: {
         title: "Stato Ordini",
         description: "Query automatiche dello stato ordini, tracciamento consegne e aggiornamenti in tempo reale."
+      }
+    }
+  },
+  privacyPolicy: {
+    title: "Politica sulla Privacy",
+    lastUpdated: "Ultimo aggiornamento: [Data]",
+    sections: {
+      introduction: {
+        title: "1. Introduzione",
+        content: "Questa Politica sulla Privacy descrive come Opus raccoglie, usa e protegge le tue informazioni personali."
+      },
+      dataCollection: {
+        title: "2. Raccolta Dati",
+        content: "Raccogliamo informazioni che ci fornisci direttamente e dati di utilizzo automatici."
+      },
+      dataUse: {
+        title: "3. Uso dei Dati",
+        content: "Utilizziamo i tuoi dati per fornire e migliorare i nostri servizi."
+      },
+      dataProtection: {
+        title: "4. Protezione Dati",
+        content: "Implementiamo misure di sicurezza per proteggere le tue informazioni."
+      },
+      contact: {
+        title: "5. Contatto",
+        content: "Per domande sulla privacy, contattaci."
+      }
+    }
+  },
+  termsOfUse: {
+    title: "Termini di Utilizzo",
+    lastUpdated: "Ultimo aggiornamento: [Data]",
+    sections: {
+      acceptance: {
+        title: "1. Accettazione dei Termini",
+        content: "Utilizzando i nostri servizi, accetti questi termini."
+      },
+      services: {
+        title: "2. Descrizione dei Servizi",
+        content: "Forniamo assistenti virtuali IA per WhatsApp."
+      },
+      responsibilities: {
+        title: "3. Responsabilità dell'Utente",
+        content: "Sei responsabile dell'uso appropriato dei servizi."
+      },
+      limitations: {
+        title: "4. Limitazioni",
+        content: "I nostri servizi sono forniti 'come sono'."
+      },
+      contact: {
+        title: "5. Contatto",
+        content: "Per domande sui termini, contattaci."
       }
     }
   }
