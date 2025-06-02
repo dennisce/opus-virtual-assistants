@@ -3,9 +3,13 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LanguageSelector from "@/components/LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useTranslations } from "@/translations";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language } = useLanguage();
+  const t = useTranslations(language);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
@@ -21,8 +25,8 @@ const NavBar = () => {
           
           <div className="hidden md:flex items-center space-x-6">
             <LanguageSelector />
-            <Button variant="outline">Login</Button>
-            <Button>Começar Agora</Button>
+            <Button variant="outline">{t.navbar.login}</Button>
+            <Button>{t.navbar.startNow}</Button>
           </div>
 
           <div className="md:hidden flex items-center space-x-2">
@@ -39,8 +43,8 @@ const NavBar = () => {
 
         {isMenuOpen && (
           <div className="md:hidden pb-4 space-y-2">
-            <Button variant="outline" className="w-full">Login</Button>
-            <Button className="w-full">Começar Agora</Button>
+            <Button variant="outline" className="w-full">{t.navbar.login}</Button>
+            <Button className="w-full">{t.navbar.startNow}</Button>
           </div>
         )}
       </div>

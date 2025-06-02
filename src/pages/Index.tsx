@@ -73,10 +73,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Monitoramento Completo de Conversões
+              {t.conversion.title}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Acompanhe cada interação e otimize seus resultados com dados precisos e actionáveis
+              {t.conversion.subtitle}
             </p>
           </div>
           
@@ -104,11 +104,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-              Não perca mais nada
+              {t.reports.title}
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Receba relatórios diários automáticos sobre todas as pendências e oportunidades perdidas, 
-              garantindo que nenhum cliente seja esquecido
+              {t.reports.subtitle}
             </p>
           </div>
           
@@ -126,10 +125,9 @@ const Index = () => {
                   <AlertTriangle className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Identificação de Pendências</h3>
+                  <h3 className="text-xl font-semibold mb-2">{t.reports.identification.title}</h3>
                   <p className="text-gray-600">
-                    Nossa IA monitora constantemente todas as conversas e identifica automaticamente 
-                    clientes que ficaram sem resposta ou com questões em aberto.
+                    {t.reports.identification.description}
                   </p>
                 </div>
               </div>
@@ -139,10 +137,9 @@ const Index = () => {
                   <FileText className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Relatórios Detalhados</h3>
+                  <h3 className="text-xl font-semibold mb-2">{t.reports.detailed.title}</h3>
                   <p className="text-gray-600">
-                    Receba diariamente um resumo completo com todas as pendências, incluindo 
-                    sugestões de mensagens personalizadas para reativar cada cliente.
+                    {t.reports.detailed.description}
                   </p>
                 </div>
               </div>
@@ -152,10 +149,9 @@ const Index = () => {
                   <BarChart3 className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Recuperação de Oportunidades</h3>
+                  <h3 className="text-xl font-semibold mb-2">{t.reports.recovery.title}</h3>
                   <p className="text-gray-600">
-                    Transforme pendências em vendas com follow-ups inteligentes e automatizados, 
-                    aumentando sua taxa de conversão e satisfação do cliente.
+                    {t.reports.recovery.description}
                   </p>
                 </div>
               </div>
@@ -166,7 +162,7 @@ const Index = () => {
                   onClick={() => callAssistente("Oi, quero saber mais sobre os relatórios de pendências")}
                   className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
                 >
-                  Saiba Mais sobre Relatórios
+                  {t.reports.learnMore}
                 </Button>
               </div>
             </div>
@@ -266,7 +262,7 @@ const Index = () => {
             <Card className="relative border-2 border-blue-400 hover:border-blue-500 transition-all duration-300 transform scale-105 hover:scale-110 shadow-xl hover:shadow-2xl">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                 <span className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
-                  Mais Popular
+                  {t.pricing.popular}
                 </span>
               </div>
               <CardHeader className="text-center pb-4">
@@ -331,7 +327,7 @@ const Index = () => {
             <Card className="relative border-2 border-gradient-to-r from-amber-400 to-orange-500 hover:border-amber-500 transition-all duration-300 hover:shadow-2xl bg-gradient-to-br from-amber-50 to-orange-50">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                 <span className="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
-                  Enterprise
+                  {t.pricing.enterprise}
                 </span>
               </div>
               <CardHeader className="text-center pb-4">

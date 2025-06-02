@@ -8,6 +8,31 @@ export interface Translations {
     startNow: string;
     learnMore: string;
   };
+  navbar: {
+    login: string;
+    startNow: string;
+  };
+  conversion: {
+    title: string;
+    subtitle: string;
+  };
+  reports: {
+    title: string;
+    subtitle: string;
+    identification: {
+      title: string;
+      description: string;
+    };
+    detailed: {
+      title: string;
+      description: string;
+    };
+    recovery: {
+      title: string;
+      description: string;
+    };
+    learnMore: string;
+  };
   benefits: {
     title: string;
     fastImplementation: {
@@ -54,6 +79,8 @@ export interface Translations {
       title: string;
       points: string[];
     };
+    popular: string;
+    enterprise: string;
   };
   cta: {
     title: string;
@@ -75,6 +102,31 @@ const translations: Record<Language, Translations> = {
       subtitle: "Automatize suas conversas, agende compromissos e impulsione suas vendas com nossa plataforma de IA",
       startNow: "Começar Agora",
       learnMore: "Saiba Mais"
+    },
+    navbar: {
+      login: "Login",
+      startNow: "Começar Agora"
+    },
+    conversion: {
+      title: "Monitoramento Completo de Conversões",
+      subtitle: "Acompanhe cada interação e otimize seus resultados com dados precisos e actionáveis"
+    },
+    reports: {
+      title: "Não perca mais nada",
+      subtitle: "Receba relatórios diários automáticos sobre todas as pendências e oportunidades perdidas, garantindo que nenhum cliente seja esquecido",
+      identification: {
+        title: "Identificação de Pendências",
+        description: "Nossa IA monitora constantemente todas as conversas e identifica automaticamente clientes que ficaram sem resposta ou com questões em aberto."
+      },
+      detailed: {
+        title: "Relatórios Detalhados",
+        description: "Receba diariamente um resumo completo com todas as pendências, incluindo sugestões de mensagens personalizadas para reativar cada cliente."
+      },
+      recovery: {
+        title: "Recuperação de Oportunidades",
+        description: "Transforme pendências em vendas com follow-ups inteligentes e automatizados, aumentando sua taxa de conversão e satisfação do cliente."
+      },
+      learnMore: "Saiba Mais sobre Relatórios"
     },
     benefits: {
       title: "Por que escolher a Opus?",
@@ -159,7 +211,9 @@ const translations: Record<Language, Translations> = {
           "As customizações para integrações com sistemas externos precisam ser orçadas e analisadas caso a caso",
           "Para maiores informações, consulte nossos Termos de Uso e Política de Privacidade"
         ]
-      }
+      },
+      popular: "Mais Popular",
+      enterprise: "Enterprise"
     },
     cta: {
       title: "Pronto para Transformar seu Atendimento?",
@@ -179,6 +233,31 @@ const translations: Record<Language, Translations> = {
       subtitle: "Automate your conversations, schedule appointments and boost your sales with our AI platform",
       startNow: "Start Now",
       learnMore: "Learn More"
+    },
+    navbar: {
+      login: "Login",
+      startNow: "Start Now"
+    },
+    conversion: {
+      title: "Complete Conversion Monitoring",
+      subtitle: "Track every interaction and optimize your results with precise and actionable data"
+    },
+    reports: {
+      title: "Never miss anything again",
+      subtitle: "Receive automatic daily reports on all pending issues and missed opportunities, ensuring no customer is forgotten",
+      identification: {
+        title: "Pending Issues Identification",
+        description: "Our AI constantly monitors all conversations and automatically identifies customers who were left unanswered or with open questions."
+      },
+      detailed: {
+        title: "Detailed Reports",
+        description: "Receive daily a complete summary with all pending issues, including personalized message suggestions to reactivate each customer."
+      },
+      recovery: {
+        title: "Opportunity Recovery",
+        description: "Transform pending issues into sales with intelligent and automated follow-ups, increasing your conversion rate and customer satisfaction."
+      },
+      learnMore: "Learn More About Reports"
     },
     benefits: {
       title: "Why choose Opus?",
@@ -263,7 +342,9 @@ const translations: Record<Language, Translations> = {
           "Customizations for external system integrations need to be quoted and analyzed case by case",
           "For more information, check our Terms of Use and Privacy Policy"
         ]
-      }
+      },
+      popular: "Most Popular",
+      enterprise: "Enterprise"
     },
     cta: {
       title: "Ready to Transform Your Support?",
@@ -283,6 +364,31 @@ const translations: Record<Language, Translations> = {
       subtitle: "Automatizza le tue conversazioni, programma appuntamenti e potenzia le tue vendite con la nostra piattaforma AI",
       startNow: "Inizia Ora",
       learnMore: "Scopri di Più"
+    },
+    navbar: {
+      login: "Accedi",
+      startNow: "Inizia Ora"
+    },
+    conversion: {
+      title: "Monitoraggio Completo delle Conversioni",
+      subtitle: "Traccia ogni interazione e ottimizza i tuoi risultati con dati precisi e actionabili"
+    },
+    reports: {
+      title: "Non perdere più nulla",
+      subtitle: "Ricevi rapporti giornalieri automatici su tutte le questioni in sospeso e le opportunità perse, garantendo che nessun cliente venga dimenticato",
+      identification: {
+        title: "Identificazione Questioni in Sospeso",
+        description: "La nostra IA monitora costantemente tutte le conversazioni e identifica automaticamente i clienti rimasti senza risposta o con questioni aperte."
+      },
+      detailed: {
+        title: "Rapporti Dettagliati",
+        description: "Ricevi quotidianamente un riassunto completo con tutte le questioni in sospeso, inclusi suggerimenti di messaggi personalizzati per riattivare ogni cliente."
+      },
+      recovery: {
+        title: "Recupero Opportunità",
+        description: "Trasforma le questioni in sospeso in vendite con follow-up intelligenti e automatizzati, aumentando il tuo tasso di conversione e la soddisfazione del cliente."
+      },
+      learnMore: "Scopri di Più sui Rapporti"
     },
     benefits: {
       title: "Perché scegliere Opus?",
@@ -367,7 +473,9 @@ const translations: Record<Language, Translations> = {
           "Le personalizzazioni per integrazioni con sistemi esterni devono essere quotate e analizzate caso per caso",
           "Per maggiori informazioni, consulta i nostri Termini di Utilizzo e Politica sulla Privacy"
         ]
-      }
+      },
+      popular: "Più Popolare",
+      enterprise: "Enterprise"
     },
     cta: {
       title: "Pronto a Trasformare il Tuo Supporto?",
@@ -387,6 +495,31 @@ const translations: Record<Language, Translations> = {
       subtitle: "Automatisieren Sie Ihre Gespräche, terminieren Sie Termine und steigern Sie Ihre Verkäufe mit unserer KI-Plattform",
       startNow: "Jetzt Starten",
       learnMore: "Mehr Erfahren"
+    },
+    navbar: {
+      login: "Anmelden",
+      startNow: "Jetzt Starten"
+    },
+    conversion: {
+      title: "Vollständige Konversionsüberwachung",
+      subtitle: "Verfolgen Sie jede Interaktion und optimieren Sie Ihre Ergebnisse mit präzisen und umsetzbaren Daten"
+    },
+    reports: {
+      title: "Verpassen Sie nie wieder etwas",
+      subtitle: "Erhalten Sie automatische tägliche Berichte über alle ausstehenden Angelegenheiten und verpassten Gelegenheiten, um sicherzustellen, dass kein Kunde vergessen wird",
+      identification: {
+        title: "Identifikation Ausstehender Angelegenheiten",
+        description: "Unsere KI überwacht ständig alle Gespräche und identifiziert automatisch Kunden, die unbeantwortet blieben oder offene Fragen haben."
+      },
+      detailed: {
+        title: "Detaillierte Berichte",
+        description: "Erhalten Sie täglich eine vollständige Zusammenfassung aller ausstehenden Angelegenheiten, einschließlich personalisierter Nachrichtenvorschläge zur Reaktivierung jedes Kunden."
+      },
+      recovery: {
+        title: "Chancenwiedergewinnung",
+        description: "Verwandeln Sie ausstehende Angelegenheiten in Verkäufe mit intelligenten und automatisierten Follow-ups, wodurch Ihre Konversionsrate und Kundenzufriedenheit steigt."
+      },
+      learnMore: "Mehr über Berichte erfahren"
     },
     benefits: {
       title: "Warum Opus wählen?",
@@ -471,7 +604,9 @@ const translations: Record<Language, Translations> = {
           "Anpassungen für externe Systemintegrationen müssen individuell kalkuliert und analysiert werden",
           "Für weitere Informationen konsultieren Sie unsere Nutzungsbedingungen und Datenschutzrichtlinie"
         ]
-      }
+      },
+      popular: "Beliebteste",
+      enterprise: "Enterprise"
     },
     cta: {
       title: "Bereit, Ihren Support zu Transformieren?",
@@ -491,6 +626,31 @@ const translations: Record<Language, Translations> = {
       subtitle: "Automatiseer uw gesprekken, plan afspraken en boost uw verkoop met ons AI-platform",
       startNow: "Nu Beginnen",
       learnMore: "Meer Weten"
+    },
+    navbar: {
+      login: "Inloggen",
+      startNow: "Nu Beginnen"
+    },
+    conversion: {
+      title: "Volledige Conversie Monitoring",
+      subtitle: "Volg elke interactie en optimaliseer uw resultaten met precieze en bruikbare data"
+    },
+    reports: {
+      title: "Mis nooit meer iets",
+      subtitle: "Ontvang automatische dagelijkse rapporten over alle openstaande zaken en gemiste kansen, zodat geen enkele klant wordt vergeten",
+      identification: {
+        title: "Identificatie Openstaande Zaken",
+        description: "Onze AI monitort voortdurend alle gesprekken en identificeert automatisch klanten die onbeantwoord bleven of openstaande vragen hebben."
+      },
+      detailed: {
+        title: "Gedetailleerde Rapporten",
+        description: "Ontvang dagelijks een volledige samenvatting van alle openstaande zaken, inclusief gepersonaliseerde berichtvoorstellen om elke klant te heractiveren."
+      },
+      recovery: {
+        title: "Kansherstel",
+        description: "Transformeer openstaande zaken in verkopen met intelligente en geautomatiseerde follow-ups, waardoor uw conversieratio en klanttevredenheid toeneemt."
+      },
+      learnMore: "Meer Weten Over Rapporten"
     },
     benefits: {
       title: "Waarom Opus kiezen?",
@@ -575,7 +735,9 @@ const translations: Record<Language, Translations> = {
           "Aanpassingen voor externe systeemintegraties moeten per geval worden gecalculeerd en geanalyseerd",
           "Voor meer informatie, raadpleeg onze Gebruiksvoorwaarden en Privacybeleid"
         ]
-      }
+      },
+      popular: "Meest Populair",
+      enterprise: "Enterprise"
     },
     cta: {
       title: "Klaar om Uw Ondersteuning te Transformeren?",
