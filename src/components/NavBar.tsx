@@ -17,7 +17,7 @@ const NavBar = () => {
         <div className="flex items-center justify-between h-10">
           <div className="flex items-center space-x-8">
             <img 
-              src="/Opus.png" 
+              src="/Opus.svg" 
               alt="Opus Logo" 
               className="h-5"
             />
