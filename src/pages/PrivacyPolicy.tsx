@@ -1,8 +1,12 @@
-
 import NavBar from "@/components/NavBar";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useTranslations } from "@/translations";
 
 const PrivacyPolicy = () => {
+  const { language } = useLanguage();
+  const t = useTranslations(language);
+
   return (
     <div className="min-h-screen">
       <NavBar />
@@ -10,7 +14,7 @@ const PrivacyPolicy = () => {
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-            Política de Privacidade e Segurança de Dados
+            {t.footer.privacyPolicy}
           </h1>
           
           <div className="space-y-8">
@@ -192,7 +196,7 @@ const PrivacyPolicy = () => {
       {/* Footer similar to home page */}
       <footer className="bg-gray-100 py-8 mt-16">
         <div className="container mx-auto px-4 text-center text-gray-600">
-          <p>© {new Date().getFullYear()} Opus - Assistentes Inteligentes. Todos os direitos reservados.</p>
+          <p>{t.footer.copyright}</p>
         </div>
       </footer>
     </div>
