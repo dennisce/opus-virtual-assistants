@@ -1,52 +1,50 @@
 
-import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { UserCircle } from "lucide-react";
+import LanguageSelector from "@/components/LanguageSelector";
 
 const NavBar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className=" absolute top-0 left-0 z-50 w-full flex items-center justify-between p-1 shadow-md">
-      {/* Logo na esquerda */}
-      <div className="flex items-center">
-        <a href="/" className="flex items-center">
-          <img src="/Opus.svg" alt="Logo Opus" className="h-5" />
-        </a>
-      </div>
-
-      {/* Botão de login na direita */}
-      <div>
-      <a
-        href="https://dashboard.opusapp.com.br"
-        className="px-3 py-1 bg-gradient-to-r from-purple-600 to-purple-400 text-white font-thin rounded-full shadow-lg hover:ring-2 hover:ring-purple-500 hover:from-purple-700 hover:to-purple-500 transition-all duration-300"
-      >
-        Login
-      </a>
-      </div>
-    </header>
-    // <div className="w-full absolute">
-    //   <div className="container mx-auto px-4">
-    //     <NavigationMenu className="flex items-center justify-between py-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center space-x-8">
+            <img 
+              src="/Opus.png" 
+              alt="Opus Logo" 
+              className="h-8"
+            />
+          </div>
           
-    //       {/* Logo */}
-    //       <NavigationMenuList>
-    //         <NavigationMenuItem>
-    //           <img src="/Opus.svg" alt="Opus Logo" className="h-8" />
-    //         </NavigationMenuItem>
-    //       </NavigationMenuList>
+          <div className="hidden md:flex items-center space-x-6">
+            <LanguageSelector />
+            <Button variant="outline">Login</Button>
+            <Button>Começar Agora</Button>
+          </div>
 
-    //       {/* Botão de Login */}
-    //       <NavigationMenuList className="ml-auto">
-    //         <NavigationMenuItem>
-    //           <Button variant="outline" className="gap-2">
-    //             <UserCircle className="h-5 w-5" />
-    //             Login
-    //           </Button>
-    //         </NavigationMenuItem>
-    //       </NavigationMenuList>
+          <div className="md:hidden flex items-center space-x-2">
+            <LanguageSelector />
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </Button>
+          </div>
+        </div>
 
-    //     </NavigationMenu>
-    //   </div>
-    // </div>
+        {isMenuOpen && (
+          <div className="md:hidden pb-4 space-y-2">
+            <Button variant="outline" className="w-full">Login</Button>
+            <Button className="w-full">Começar Agora</Button>
+          </div>
+        )}
+      </div>
+    </nav>
   );
 };
 
