@@ -187,7 +187,7 @@ export const nl = {
       legal: "Juridisch",
       privacyPolicy: "Privacybeleid",
       termsOfUse: "Gebruiksvoorwaarden",
-      copyright: "© 2025 Opus. Alle rechten voorbehouden.",
+      copyright: "Opus. Alle rechten voorbehouden.",
       disclaimer: "Door onze service te gebruiken, gaat u akkoord met ons"
     },
     features: {

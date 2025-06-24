@@ -187,7 +187,7 @@ export const de = {
       legal: "Rechtliches",
       privacyPolicy: "Datenschutzrichtlinie",
       termsOfUse: "Nutzungsbedingungen",
-      copyright: "© 2025 Opus. Alle Rechte vorbehalten.",
+      copyright: "Opus. Alle Rechte vorbehalten.",
       disclaimer: "Durch die Nutzung unseres Dienstes stimmen Sie unseren zu"
     },
     features: {

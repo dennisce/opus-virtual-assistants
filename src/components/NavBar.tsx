@@ -20,13 +20,14 @@ const NavBar = () => {
               src="/Opus.svg" 
               alt="Opus Logo" 
               className="h-5"
+              onClick={() => window.location.href = "/"}
             />
           </div>
           
           <div className="hidden md:flex items-center space-x-6">
             <LanguageSelector />
-            <Button variant="outline" size="sm">{t.navbar.login}</Button>
-            <Button size="sm">{t.navbar.startNow}</Button>
+            <Button variant="outline" size="sm" onClick={() => window.location.href = "https://dashboard.opusapp.com.br"}>{t.navbar.login}</Button>
+            {/* <Button size="sm">{t.navbar.startNow}</Button> */}
           </div>
 
           <div className="md:hidden flex items-center space-x-2">
@@ -43,8 +44,8 @@ const NavBar = () => {
 
         {isMenuOpen && (
           <div className="md:hidden pb-3 space-y-2">
-            <Button variant="outline" size="sm" className="w-full">{t.navbar.login}</Button>
-            <Button size="sm" className="w-full">{t.navbar.startNow}</Button>
+            <Button variant="outline" size="sm" onClick={() => window.location.href = "https://dashboard.opusapp.com.br"}>{t.navbar.login}</Button>
+            {/* <Button size="sm" className="w-full">{t.navbar.startNow}</Button> */}
           </div>
         )}
       </div>
